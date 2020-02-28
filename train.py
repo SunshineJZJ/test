@@ -94,7 +94,7 @@ def main(_argv):
 
     # 加载伪验证集，防止没有添加验证集路径时报错
     val_dataset = dataset.load_fake_dataset()
-    # 加载验证集
+    # 加载验证集  解释同上
     if FLAGS.val_dataset:
         val_dataset = dataset.load_tfrecord_dataset(
             FLAGS.val_dataset, FLAGS.classes, FLAGS.size)
